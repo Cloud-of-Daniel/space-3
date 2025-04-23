@@ -1,10 +1,10 @@
 server:
-  port: 8085
+  port: 2999
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1010/eureka
+      defaultZone: http://localhost:2000/eureka
       #defaultZone: ${EUREKA_URI:http://localhost:8090/eureka}
   instance:
     hostname: localhost
