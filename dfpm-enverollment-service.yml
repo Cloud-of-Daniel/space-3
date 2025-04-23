@@ -1,19 +1,23 @@
 server:
-  port: 8082
+  port: 2023
 spring:
   application:
     name: dfpm-enverollment-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/space-data-product
-    username: root
-    password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-
-    jpa:
-      hibernate:
-        ddl-auto: update
-      show-sql: true
+    url: jdbc:postgresql://localhost:5432/dfpm-student
+    username: postgres
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      platform: postgres
 
 springdoc:
   api-docs:
