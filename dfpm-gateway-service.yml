@@ -20,7 +20,7 @@ spring:
         - id: dfpm-student-service
           uri: lb://dfpm-student-service
           predicates:
-            - Path=/profession/**, /profession/**
+            - Path=/student/**, /profession/**
 
         - id: dfpm-course-service
           uri: lb://dfpm-course-service
