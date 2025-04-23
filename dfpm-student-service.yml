@@ -8,15 +8,15 @@ spring:
     username: postgres
     password: 123456
     driver-class-name: org.postgresql.Driver
-    jpa:
-      database: POSTGRESQL
-      show-sql: true
-      hibernate:
-        ddl-auto: update
-      database-platform: org.hibernate.dialect.PostgreSQLDialect
-    sql:
-      init:
-        platform: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      platform: postgres
 
 springdoc:
   api-docs:
