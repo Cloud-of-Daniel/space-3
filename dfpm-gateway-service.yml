@@ -23,8 +23,8 @@ spring:
             - Path=/profession/**
             - Path=/student/**
 
-        - id: ms-producto-service
-          uri: lb://ms-producto-service
+        - id: dfpm-course-service
+          uri: lb://dfpm-course-service
           predicates:
-            - Path=/producto/**
+            - Path=/course/**
 
