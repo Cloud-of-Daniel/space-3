@@ -21,6 +21,7 @@ spring:
           uri: lb://dfpm-student-service
           predicates:
             - Path=/profession/**
+            - Path=/student/**
 
         - id: ms-producto-service
           uri: lb://ms-producto-service
