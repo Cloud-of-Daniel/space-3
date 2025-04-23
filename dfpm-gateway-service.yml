@@ -17,10 +17,10 @@ spring:
         locator:
           enable: true
       routes:
-        - id: ms-catalogo-service
-          uri: lb://ms-catalogo-service
+        - id: dfpm-student-service
+          uri: lb://dfpm-student-service
           predicates:
-            - Path=/categorias/**
+            - Path=/profession/**
 
         - id: ms-producto-service
           uri: lb://ms-producto-service
