@@ -2,7 +2,7 @@ server:
   port: 2021
 spring:
   application:
-    name: ms-catalogo-service
+    name: dfpm-student-service
   datasource:
     url: jdbc:postgresql://localhost:5432/dfpm-student
     username: postgres
